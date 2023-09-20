@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from SakkuMusic import app
-from SakkuMusic.core.call import Anony
+from SakkuMusic.core.call import Sakku
 
 welcome = 20
 close = 30
