@@ -8,7 +8,7 @@ from SakkuMusic.utils.database import autoend_off, autoend_on
 
 @app.on_message(filters.command("autoend") & SUDOERS)
 async def auto_end_stream(_, message: Message):
-    usage = "<b>ᴇxᴀᴍᴘʟᴇ :</b>\n\n/autoend [ᴇɴᴀʙʟᴇ | ᴅɪsᴀʙʟᴇ]"
+    usage = "<b>Example :</b>\n\n/autoend [Enable | Disable]"
     if len(message.command) != 2:
         return await message.reply_text(usage)
     state = message.text.split(None, 1)[1].strip().lower()
