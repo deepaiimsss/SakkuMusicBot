@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from SakkuMusic import app
-from SakkuMusic.core.call import Anony
+from SakkuMusic.core.call import Sakku
 from SakkuMusic.utils.database import is_music_playing, music_off
 from SakkuMusic.utils.decorators import AdminRightsCheck
 from SakkuMusic.utils.inline import close_markup
