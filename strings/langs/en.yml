@@ -229,7 +229,7 @@ ST_B_14 : "🫂 Play Type"
 
 SA_B_1 : "💡 Overall Stats"
 SA_B_2 : "🤖 Bot Stats"
-SA_B_3 : "💡 Overall Stats"
+SA_B_3 : "💡 Overall"
 
 QU_B_1 : "📑 Queued List"
 QU_B_2 : " {0} —————————— {1}"
