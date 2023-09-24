@@ -120,7 +120,7 @@ set_cb_5 : "Getting back.."
 
 gstats_1 : "Getting  {0} Stats and Information...\n\nThis could take some time..."
 gstats_2 : "Click on the button below to check the stats of {0}."
-gstats_3 : "<b><u>{0} Stats and Information :</u></b>\n\n<b>Assistants :</b> <code>{1}</code>\n<b>ʙʟᴏᴄᴋᴇᴅ :</b> <code>{2}</code>\n<b>Chats:</b> <code>{3}</code>\n<b>Users :</b> <code>{4}</code>\n<b>Modules :</b> <code>{5}</code>\n<b>Sudoers :</b> <code>{6}</code>\n\n<b>Auto Leaving Assistant :</b> {7}\n<b>Duration Limit :</b> {8} Minutes"
+gstats_3 : "<b><u>{0} Stats and Information :</u></b>\n\n<b>Assistants :</b> <code>{1}</code>\n<b>Blocked :</b> <code>{2}</code>\n<b>Chats:</b> <code>{3}</code>\n<b>Users :</b> <code>{4}</code>\n<b>Modules :</b> <code>{5}</code>\n<b>Sudoers :</b> <code>{6}</code>\n\n<b>Auto Leaving Assistant :</b> {7}\n<b>Duration Limit :</b> {8} Minutes"
 gstats_4 : "This button is only for Sudoers."
 gstats_5 : "<b><u>{0} Stats and Information :</u></b>\n\n<b>Modules :</b> <code>{1}</code>\n<b>Platform:</b> <code>{2}</code>\n<b>Ram :</b> <code>{3}</code>\n<b>CPU :</b> <code>{4}</code>\n<b>Total Cores :</b> <code>{5}</code>\n<b>CPU Frequency :</b> <code>{6}</code>\n\n<b>Python :</b> <code>{7}</code>\n<b>Pyrogram :</b> <code>{8}</code>\n<b>Py-Tgcalls :</b> <code>{9}</code>\n\n<b>Storage available :</b> <code>{10} GiB</code>\n<b>Storage Used :</b> <code>{11} ɢɪʙ</code>\n<b>Storage left :</b> <code>{12} GiB</code>\n\n<b>Served Chats :</b> <code>{13}</code>\n<b>Served Users :</b> <code>{14}</code>\n<b>Blocked Users :</b> <code>{15}</code>\n<b>Sudo USers :</b> <code>{16}</code>\n\n<b>Total DB Size :</b> <code>{17} Mb</code>\n<b>Total DB Storage :</b> <code>{18} MB</code>\n<b>Total DB Collections :</b> <code>{19}</code>\n<b>Total DB Keys :</b> <code>{20}</code>"
 
@@ -193,7 +193,7 @@ S_B_9 : "📨 Support"
 
 H_B_1 : "Admin"
 H_B_2 : "Auth"
-H_B_3 : "Broadcastᴛ"
+H_B_3 : "Broadcast"
 H_B_4 : "BL-Chat"
 H_B_5 : "BL-User"
 H_B_6 : "C-Play"
