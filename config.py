@@ -86,22 +86,68 @@ autoclean = []
 confirmer = {}
 
 
-START_IMG_URL = getenv(
-    "START_IMG_URL", "https://te.legra.ph/file/25efe6aa029c6baea73ea.jpg"
-)
+# Images
+START_IMG_URL = getenv("START_IMG_URL", None)
+
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg"
+    "PING_IMG_URL",
+    "assets/Ping.jpeg",
 )
-PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
-STATS_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
-TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+
+PLAYLIST_IMG_URL = getenv(
+    "PLAYLIST_IMG_URL",
+    "assets/Playlist.jpeg",
+)
+
+GLOBAL_IMG_URL = getenv(
+    "GLOBAL_IMG_URL",
+    "assets/Global.jpeg",
+)
+
+STATS_IMG_URL = getenv(
+    "STATS_IMG_URL",
+    "assets/Stats.jpeg",
+)
+
+TELEGRAM_AUDIO_URL = getenv(
+    "TELEGRAM_AUDIO_URL",
+    "assets/Audio.jpeg",
+)
+
+TELEGRAM_VIDEO_URL = getenv(
+    "TELEGRAM_VIDEO_URL",
+    "assets/Video.jpeg",
+)
+
+STREAM_IMG_URL = getenv(
+    "STREAM_IMG_URL",
+    "assets/Stream.jpeg",
+)
+
+SOUNCLOUD_IMG_URL = getenv(
+    "SOUNCLOUD_IMG_URL",
+    "assets/Soundcloud.jpeg",
+)
+
+YOUTUBE_IMG_URL = getenv(
+    "YOUTUBE_IMG_URL",
+    "assets/Youtube.jpeg",
+)
+
+SPOTIFY_ARTIST_IMG_URL = getenv(
+    "SPOTIFY_ARTIST_IMG_URL",
+    "assets/SpotifyArtist.jpeg",
+)
+
+SPOTIFY_ALBUM_IMG_URL = getenv(
+    "SPOTIFY_ALBUM_IMG_URL",
+    "assets/SpotifyAlbum.jpeg",
+)
+
+SPOTIFY_PLAYLIST_IMG_URL = getenv(
+    "SPOTIFY_PLAYLIST_IMG_URL",
+    "assets/SpotifyPlaylist.jpeg",
+)
 
 
 def time_to_seconds(time):
@@ -123,3 +169,102 @@ if SUPPORT_CHAT:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
         )
+
+if UPSTREAM_REPO:
+    if not re.match("(?:http|https)://", UPSTREAM_REPO):
+        print(
+            "[ERROR] - Your UPSTREAM_REPO url is wrong. Please ensure that it starts with https://"
+        )
+        sys.exit()
+
+if GITHUB_REPO:
+    if not re.match("(?:http|https)://", GITHUB_REPO):
+        print(
+            "[ERROR] - Your GITHUB_REPO url is wrong. Please ensure that it starts with https://"
+        )
+        sys.exit()
+
+
+if PING_IMG_URL:
+    if PING_IMG_URL != "assets/Ping.jpeg":
+        if not re.match("(?:http|https)://", PING_IMG_URL):
+            print(
+                "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+if PLAYLIST_IMG_URL:
+    if PLAYLIST_IMG_URL != "assets/Playlist.jpeg":
+        if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
+            print(
+                "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+if GLOBAL_IMG_URL:
+    if GLOBAL_IMG_URL != "assets/Global.jpeg":
+        if not re.match("(?:http|https)://", GLOBAL_IMG_URL):
+            print(
+                "[ERROR] - Your GLOBAL_IMG_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+
+if STATS_IMG_URL:
+    if STATS_IMG_URL != "assets/Stats.jpeg":
+        if not re.match("(?:http|https)://", STATS_IMG_URL):
+            print(
+                "[ERROR] - Your STATS_IMG_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+
+if TELEGRAM_AUDIO_URL:
+    if TELEGRAM_AUDIO_URL != "assets/Audio.jpeg":
+        if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
+            print(
+                "[ERROR] - Your TELEGRAM_AUDIO_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+
+if STREAM_IMG_URL:
+    if STREAM_IMG_URL != "assets/Stream.jpeg":
+        if not re.match("(?:http|https)://", STREAM_IMG_URL):
+            print(
+                "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+
+if SOUNCLOUD_IMG_URL:
+    if SOUNCLOUD_IMG_URL != "assets/Soundcloud.jpeg":
+        if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
+            print(
+                "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+if YOUTUBE_IMG_URL:
+    if YOUTUBE_IMG_URL != "assets/Youtube.jpeg":
+        if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
+            print(
+                "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+
+if TELEGRAM_VIDEO_URL:
+    if TELEGRAM_VIDEO_URL != "assets/Video.jpeg":
+        if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
+            print(
+                "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"
+            )
+            sys.exit()
+
+
+if not MUSIC_BOT_NAME.isascii():
+    print(
+        "[ERROR] - You've defined MUSIC_BOT_NAME wrong. Please don't use any special characters or Special font for this... Keep it simple and small."
+    )
+    sys.exit()
