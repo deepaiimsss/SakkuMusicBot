@@ -2,12 +2,12 @@
 
 # Sakku MusicBot <img src="https://img.shields.io/github/v/release/deepaiimsss/SakkuMusicBot?color=black&logo=github&logoColor=black&style=social" alt="RELEASE">
 
-[Sakku MusicBot](https://github.com/deepaiimsss/SakkuMusicBot) is a Powerful Telegram SpamBot written in Python using  Telethon by which you can spam your enemies in its best way.
+[Sakku MusicBot](https://github.com/deepaiimsss/SakkuMusicBot) is a Powerful Telegram Music Bot written in Python using  Telethon by which you can listen to songs in telegranm voice chat
 
 * Written from scratch, making it stable and less crashes.
 * Attractive thumbnails, fonts and images,  making experience more user-friendly and interactive.
-* For fast spam
-* Telethon based
+* For lag free music
+* pyrogram based
 * Multi-Language support
 
 
@@ -47,7 +47,7 @@ Reach out to the maintainer at one of the following places:
 
 ## 🎗 Project assistance
 
-If you want to say **thank you** or/and support active development of Aliza SpamBot:
+If you want to say **thank you** or/and support active development of Sakku Music  bot:
 
 - Add a [GitHub Star](https://github.com/deepaiimsss/SakkuMusicBot) to the project.
 - Fork the Repo :)
