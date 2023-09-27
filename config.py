@@ -177,14 +177,6 @@ if UPSTREAM_REPO:
         )
         sys.exit()
 
-if GITHUB_REPO:
-    if not re.match("(?:http|https)://", GITHUB_REPO):
-        print(
-            "[ERROR] - Your GITHUB_REPO url is wrong. Please ensure that it starts with https://"
-        )
-        sys.exit()
-
-
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
@@ -263,8 +255,3 @@ if TELEGRAM_VIDEO_URL:
             sys.exit()
 
 
-if not MUSIC_BOT_NAME.isascii():
-    print(
-        "[ERROR] - You've defined MUSIC_BOT_NAME wrong. Please don't use any special characters or Special font for this... Keep it simple and small."
-    )
-    sys.exit()
