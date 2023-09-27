@@ -19,7 +19,6 @@ from SakkuMusic.utils.inline.song import song_markup
 @app.on_message(
     filters.command(["song", "video"])
     & filters.group
-    & ~filters.edited
     & ~BANNED_USERS
 )
 @language
