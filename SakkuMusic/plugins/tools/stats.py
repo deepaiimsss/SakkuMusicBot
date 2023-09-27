@@ -89,9 +89,9 @@ async def bot_stats(client, CallbackQuery, _):
     try:
         cpu_freq = psutil.cpu_freq().current
         if cpu_freq >= 1000:
-            cpu_freq = f"{round(cpu_freq / 1000, 2)}GHZ"
+            cpu_freq = f"{round(cpu_freq / 1000, 2)} GHZ"
         else:
-            cpu_freq = f"{round(cpu_freq, 2)}MHZ"
+            cpu_freq = f"{round(cpu_freq, 2)} MHZ"
     except:
         cpu_freq = "Failed to fetch"
     hdd = psutil.disk_usage("/")
