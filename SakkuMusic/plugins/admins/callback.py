@@ -27,6 +27,7 @@ from config import (
     SOUNCLOUD_IMG_URL,
     STREAM_IMG_URL,
     TELEGRAM_AUDIO_URL,
+    SUPPORT_CHAT,
     TELEGRAM_VIDEO_URL,
     adminlist,
     confirmer,
