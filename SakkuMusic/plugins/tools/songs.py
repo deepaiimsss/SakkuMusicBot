@@ -15,12 +15,9 @@ from SakkuMusic.utils.decorators.language import language, languageCB
 from SakkuMusic.utils.formatters import convert_bytes
 from SakkuMusic.utils.inline.song import song_markup
 
-# Command
-SONG_COMMAND = get_command("SONG_COMMAND")
-
 
 @app.on_message(
-    filters.command(SONG_COMMAND)
+    filters.command(["song", "video"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
