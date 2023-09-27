@@ -114,7 +114,7 @@ HELP_11 = """
 <u><b>Play Commands:</b></u>
 
 <b>v :</b> Stands for video play.
-<b>force :</b> sᴛᴀɴᴅs ғᴏʀ ғᴏʀᴄᴇ ᴩʟᴀʏ.
+<b>force :</b> Stands fof force play.
 
 /play ᴏʀ /vplay :Bot will start playing your given query on voice chat or Stream live links on voice chats.
 
