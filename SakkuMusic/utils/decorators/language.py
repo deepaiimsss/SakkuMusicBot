@@ -1,4 +1,6 @@
+from SakkuMusic import app
 from SakkuMusic.misc import SUDOERS
+from config import SUPPORT_CHAT
 from SakkuMusic.utils.database import get_lang, is_maintenance
 from strings import get_string
 
