@@ -8,13 +8,11 @@ gitpython
 hachoir
 heroku3
 motor
-numpy
-opencv-python
-pillow==9.5.0
+pillow
 psutil
-py-tgcalls
+py-tgcalls==0.9.7
 pykeyboard
-https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.23.zip
+pyrofork
 python-dotenv
 pyyaml
 requests
@@ -22,7 +20,6 @@ speedtest-cli
 spotipy
 tgcrypto
 unidecode
-uvloop
 yt-dlp
 youtube-search
 youtube-search-python
